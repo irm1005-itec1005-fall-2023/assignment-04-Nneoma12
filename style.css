@@ -116,6 +116,9 @@ main {
   font-family: Georgia, Times, 'Times New Roman', serif;
   font-size: 3rem;
 }
+.hidden{
+  display: none;
+}
 
 input{
   flex: 1;

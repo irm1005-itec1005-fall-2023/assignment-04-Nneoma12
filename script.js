@@ -114,7 +114,7 @@ function loadData() {
 }
 
 loadData();
-
+const todoEmptyState = document.querySelector(".empty-state");
 todoEmptyState.classList.add("hidden");
 
 // Citations and References: https://m.youtube.com/watch?v=G0jO8kUrg-I&pp=ygUGI3l1ZGl2
