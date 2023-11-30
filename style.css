@@ -35,11 +35,160 @@ body {
 
 main {
   min-height: 100vh;
-
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  max-height: 100px;
+}
+.header-container h2 {
+  margin-top: 10px;
+  padding: 0;
+  font-size: 1.9rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: #1e50a2;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.menu-icon{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(images/icon/photo-1677297680113-d508d9d01eee\ \(1\).jpg);
+  background-size: cover;
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: white;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+.icon{
+  width: 100px ;
+  margin-left: 10px;
+}
+.todo-app h1{
+  color: #003049;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+.empty-state{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+  color: #003049;
+  background: #fff;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 3rem;
+}
+.hidden{
+  display: none;
+}
+
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 10px;
+  font-size: 18px;
+  color: black;
+}
+
+button{
+  border: none;
+  outline: none;
+  background: #6f0988;
+  cursor: pointer;
+  padding: 10px 50px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 40px;
+}
+ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/icon/2650836.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked{
+  color: #888;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+  background-image: url(images/icon/download.png);
+}
+ul li button{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  background:none;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+}
+ul li button:hover{
+  color: #ff0000;
+}
+.function-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 0;
+  margin-top: 50px;
+  }
 
 
 /****** Screen reader text utility clsas *******/

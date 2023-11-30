@@ -38,11 +38,44 @@
     - Has a team member conducted a code review and left a GitHub Issue in your repo?
     - Have you conducted a code review and left a GitHub Issue on your team member's repo?
 
+    
   -->
 
+  <header>
+    <div class="header-container">
+    <img class="menu-icon"
+    src="./images/background-image/menu-icon-png-freepic-13-sm-1.png"
+    alt="menu icon"/>
+    <h2>Simplist</h2>
+  </div>
+  </header>
   <main>
     <div id="app"></div>
-  </main>
+  <div class="container">
+    <div class="todo-app">
+      <h1>To-Do List <img class="icon"
+        src="images/icon/To-do-list-icon-Graphics-17618184-1-580x386.jpg" alt="icon"></h1>
+        <form id="form"
+        class="row">
+        <label for="input-box"></label>
+        <input type="text" 
+               id="input-box"
+               placeholder="Add to-do item">
+        <button onclick="addTask()">Add</button>
+    </form>
+      <ul id="list-container">
+      </ul>
+        <div class="empty-state">
+          <img src="./images/icon/1000_F_156452968_er4IjJ96bMwIzxBDZGOfWqROLAdAGcpk.jpg" alt="happy-squid">
+         <p>Hurray! You have no todos </p> 
+         </div>
+        <div class="function-buttons">
+          <button onclick="clearAll()">Clear All</button>
+          <button onclick="clearCompleted()">Clear Completed</button>
+        </div>
+    </div>
+  </div>
+</main>
 
   <!-- Add JavaScript File -->
   <script src="./script.js"></script>
